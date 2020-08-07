@@ -7,6 +7,12 @@
 ## functions do
 
 ## Write a short comment describing this function
+
+##Caching the inverse of a matrix
+
+##Making the functions makeCachematrix and cacheSolve.
+
+##makeCacheMatrix: to create the "matrix" object that can cache its inverse
 library(matlib)
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -25,6 +31,8 @@ list(set=set,get=get,setinv=setinv,getinv=getinv)
 
 ## Write a short comment describing this function
 
+##cacheSolve: function to get the inverse of the special "matrix"
+
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   m <- x$getinv()
@@ -41,6 +49,6 @@ cacheSolve <- function(x, ...) {
   }
 
 mat<-matrix(c(1,4,9,0,-3,2,2,7,8),3,3)
-m1 <- makeCacheMatrix(mat)
-cacheSolve(m1)
+m1 <- makeCacheMatrix(mat) #make cache matrix
+cacheSolve(m1) # returns inverse
 
