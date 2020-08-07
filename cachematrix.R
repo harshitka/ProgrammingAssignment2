@@ -40,3 +40,7 @@ cacheSolve <- function(x, ...) {
   m
   }
 
+mat<-matrix(c(1,4,9,0,-3,2,2,7,8),3,3)
+m1 <- makeCacheMatrix(mat)
+cacheSolve(m1)
+
